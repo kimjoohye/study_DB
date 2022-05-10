@@ -1,0 +1,27 @@
+SELECT ROWID,
+       empno,
+       ename
+FROM emp;
+
+--ROWID                   EMPNO ENAME     
+-------------------- ---------- ----------
+--AAAR9iAAHAAAACuAAA       7369 SMITH     
+--AAAR9iAAHAAAACuAAB       7499 ALLEN     
+--AAAR9iAAHAAAACuAAC       7521 WARD      
+--AAAR9iAAHAAAACuAAD       7566 JONES     
+--AAAR9iAAHAAAACuAAE       7654 MARTIN    
+--AAAR9iAAHAAAACuAAF       7698 BLAKE     
+--AAAR9iAAHAAAACuAAG       7782 CLARK     
+--AAAR9iAAHAAAACuAAH       7788 SCOTT     
+--AAAR9iAAHAAAACuAAI       7839 KING      
+--AAAR9iAAHAAAACuAAJ       7844 TURNER    
+--AAAR9iAAHAAAACuAAK       7876 ADAMS     
+--AAAR9iAAHAAAACuAAL       7900 JAMES     
+--AAAR9iAAHAAAACuAAM       7902 FORD      
+--AAAR9iAAHAAAACuAAN       7934 MILLER    
+
+SELECT ROWID,
+       empno,
+       ename
+FROM emp
+WHERE ROWID = 'AAAR9iAAHAAAACuAAN';

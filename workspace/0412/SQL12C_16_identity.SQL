@@ -1,0 +1,11 @@
+CREATE TABLE T_IDEN
+(
+    NO number generated as identity,
+    NAME VARCHAR2(10)
+);
+
+INSERT INTO T_IDEN(NAME) VALUES('AAA');
+INSERT INTO T_IDEN(NAME) VALUES('BBB');
+
+--NO 자동 증가
+SELECT * FROM T_IDEN;

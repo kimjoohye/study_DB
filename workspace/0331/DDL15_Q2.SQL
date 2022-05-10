@@ -1,0 +1,4 @@
+--p324 Q2
+ALTER TABLE emp_hw
+ADD bigo VARCHAR2(20 BYTE)
+;

@@ -1,0 +1,9 @@
+SET SERVEROUTPUT ON;
+DECLARE
+    V_TAX CONSTANT NUMBER(1) := 3;
+BEGIN  
+    --ORA-06550: 줄 4, 열5:PLS-00363: 'V_TAX' 식은 피할당자로 사용될 수 없습니다
+    V_TAX := 9;
+    DBMS_OUTPUT.PUT_LINE('V_TAX: ' || V_TAX);
+END;
+/

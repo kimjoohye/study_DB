@@ -1,0 +1,27 @@
+--1
+CREATE TABLE deptseq
+AS
+SELECT *
+FROM dept
+;
+
+--테이블 확인
+SELECT *
+FROM deptseq;
+
+--2
+CREATE SEQUENCE seq_deptseq
+INCREMENT BY 1
+START WITH 1
+MAXVALUE 99
+MINVALUE 1
+NOCYCLE
+NOCACHE
+;
+
+--3
+INSERT INTO deptseq VALUES (seq_deptseq.NEXTVAL,'DATABASE','SEOUL');
+INSERT INTO deptseq VALUES (seq_deptseq.NEXTVAL,'WEB','BUSAN');
+INSERT INTO deptseq VALUES (seq_deptseq.NEXTVAL,'MOBILE','ILSAN');
+
+COMMIT;

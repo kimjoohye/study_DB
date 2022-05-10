@@ -1,0 +1,15 @@
+--값 집어넣기
+SET SERVEROUTPUT ON;
+DECLARE
+
+BEGIN
+    FOR i IN 1..10 LOOP
+        INSERT INTO T_SEQ_TEST(name)
+        VALUES (DBMS_RANDOM.STRING('A',10));
+    END LOOP;
+    
+    COMMIT;
+END;
+/
+--확인
+SELECT * FROM T_SEQ_TEST;

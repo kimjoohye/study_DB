@@ -1,0 +1,2 @@
+DROP PROCEDURE PRO_NOPARAM;
+--Procedure PRO_NOPARAM이(가) 삭제되었습니다.

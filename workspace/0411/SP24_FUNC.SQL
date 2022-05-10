@@ -1,0 +1,3 @@
+DROP FUNCTION FUNC_AFTERTAX;
+
+--Function FUNC_AFTERTAX이(가) 삭제되었습니다.

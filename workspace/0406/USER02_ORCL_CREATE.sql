@@ -1,0 +1,9 @@
+--ORCLSTUDY 계정
+--테이블 생성
+CREATE TABLE temp2 (
+    COL1 VARCHAR2(20),
+    COL2 VARCHAR2(20)
+);
+
+--데이터 입력
+INSERT INTO temp2 VALUES ('USER','GRANT_TEST');
