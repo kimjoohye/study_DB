@@ -1,0 +1,4 @@
+SELECT LPAD(ename,9,'1234567890') AS LPAD01
+FROM emp
+WHERE deptno = 10
+;
